@@ -1,0 +1,15 @@
+{
+    "url": "example.com",
+    "base": "/kdav/addressbooks/",
+    "user": "carddav_login_user",
+    "password": "carddav_login_pass",
+    "users": {
+        "PHONE01": {
+            "pass": "PHONE01",
+            "addressbooks": [
+                "user1",
+                "user2"
+            ]
+        }
+    }
+}
