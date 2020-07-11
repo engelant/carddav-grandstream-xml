@@ -154,6 +154,6 @@ app.get('/phonebook.xml', async function (req, res) {
     res.send(CardGW.createPhonebook(contacts).toString());
 });
 
-app.listen(8080, function () {
-    console.log('CardGW listening on HTTP Port 8080!');
+app.listen(settings.port, function () {
+    console.log(`CardGW listening on HTTP Port ${settings.port}!`);
 });

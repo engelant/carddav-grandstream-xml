@@ -3,6 +3,7 @@
     "base": "/kdav/addressbooks/",
     "user": "carddav_login_user",
     "password": "carddav_login_pass",
+    "port": "8080",
     "users": {
         "PHONE01": {
             "pass": "PHONE01",
