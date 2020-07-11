@@ -100,7 +100,7 @@ const CardGW = new class {
                     .node('name', firstUpper(decodeURIComponent(group).replace(/\.|\;|\,/gm, ' ')));
 
             for(const contact of contacts[group]) {
-                const tels = contact.get("tel");
+                let tels = contact.get("tel");
                 if (tels) {
                     const name = contact.get("n").toJSON()[3];
                     const contact_ref = xml_addressbook.get('/AddressBook')
