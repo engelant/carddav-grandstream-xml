@@ -125,7 +125,7 @@ const CardGW = new class {
                             
                             contact_ref
                                 .node('Phone').attr('type', firstUpper(tel_type.join(' ')))
-                                    .node('phonenumber', String(tel.valueOf()))
+                                    .node('phonenumber', String(tel.valueOf()).replace(/^\+(.*)$/gm, '00$1') )
                                     .parent()
                                     .node('accountindex', String(0));
                         });
